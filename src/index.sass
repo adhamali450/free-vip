@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap')
+
+@tailwind base
+@tailwind components
+@tailwind utilities
+
+@layer utilities
+    // Fluid: min: (404px), max: (1029px) 
+    .fl-h1
+        font-size: clamp(2.25rem, calc(3.84vw + 1.28rem), 3.75rem)
+        line-height: 1.1
+    .fl-h2
+        font-size: clamp(1.8rem, calc(2.048vw + 1.283rem), 2.6rem)
+        line-height: 1.1
+    .fl-h3
+        font-size: 1.32rem
+        font-size: clamp(1.32rem, 0.95rem + 1.44vw, 1.88rem)
+        line-height: 1.1
+    .fl-h5
+        font-size: 1.25rem // fallback
+        font-size: clamp(1.25rem, 1.0884rem + 0.64vw, 1.5rem)
+        line-height: 1.1
+    .fl-b
+        font-size: 0.95rem
+        font-size: clamp(0.95rem, 0.6592rem + 1.152vw, 1.4rem)
+        line-height: 1.7
+
+    .container
+        width: 90%
+        margin: 0 auto
+    .wrapper
+        @apply w-full max-w-[1920px] mx-auto
+
+:root
+    font-family: 'IBM Plex Sans Arabic', sans-serif
+
+body
+    margin: 0
+    min-height: 100vh
+
+h2
+    @apply font-bold text-dark-yellow
