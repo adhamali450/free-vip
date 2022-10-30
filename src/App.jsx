@@ -44,7 +44,9 @@ function App() {
   const copyHandler = () => {
     navigator.clipboard.writeText("https://three-horsemen-of-21.vercel.app/");
     checkmarkRef.current.classList.add("checkmark");
-    console.log(checkmarkRef.current.classList);
+    setTimeout(() => {
+      checkmarkRef.current.classList.remove("checkmark");
+    }, 2000);
   };
   return (
     <div className="App">
@@ -58,12 +60,14 @@ function App() {
             ساعدنا نشوف
             <br className="hidden md:inline-block" /> ويجز
           </h2>
-          {/* <div className="flex flex-wrap justify-between items-center gap-5"> */}
           {threeHorsemen.map((horseman) => {
             return (
-              <div className="shifted-border relative" key={horseman.name}>
+              <div
+                className="max-h-[300px] aspect-square shifted-border relative"
+                key={horseman.name}
+              >
                 <img
-                  className="max-h-[300px] aspect-square object-cover	"
+                  className="w-full h-full object-cover"
                   src={horseman.image}
                   alt={horseman.name}
                 />
@@ -99,7 +103,7 @@ function App() {
                     دوس هنا عشان تعمله copy
                   </button>
                   <img
-                    className="hidden"
+                    className="invisible"
                     ref={checkmarkRef}
                     src={iconCheckmark}
                     alt="success"

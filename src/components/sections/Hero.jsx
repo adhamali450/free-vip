@@ -14,12 +14,6 @@ const Hero = () => {
       song: "البار",
     },
     {
-      quote: `استنونا نقب في رجولنا
-      *
-      بيتشعبطوا`,
-      song: "اللقطة",
-    },
-    {
       quote: `هنوصل بالسلامة
       *
       و انتو بالسلامة`,
@@ -99,7 +93,7 @@ const Hero = () => {
               );
             })}
           <small className="text-lg font-normal opacity-70">
-            <br className="inline-block md-hidden" />
+            <br className="inline-block md:hidden" />
             (ويجز - {heroQuotes[renderedQuoteIndex]["song"]})
           </small>
         </h1>

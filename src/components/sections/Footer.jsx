@@ -1,7 +1,5 @@
 import React, { Fragment } from "react";
-import Marquee, { Motion, randomIntFromInterval } from "react-marquee-slider";
-
-// import Marquee from "react-fast-marquee";
+import Marquee, { randomIntFromInterval } from "react-marquee-slider";
 
 import collection from "@assets/cover-collection.webp";
 import iconIg from "@assets/icon-ig.svg";
@@ -84,9 +82,11 @@ const LyricsMarquee = ({ className }) => {
     "انا فالغريق",
   ];
 
+  const relativeVelocity = (-15 / 1129) * (390 - window.innerWidth) + 5;
+
   return (
     <div className={`${className} flex flex-col gap-6 opacity-75`}>
-      <Marquee velocity={20} direction="rtl">
+      <Marquee velocity={relativeVelocity} direction="rtl">
         {quotes.slice(0, quotes.length / 2).map((quote, index) => {
           return (
             <p className="mx-6" key={`quote-${index}`}>
@@ -95,7 +95,7 @@ const LyricsMarquee = ({ className }) => {
           );
         })}
       </Marquee>
-      <Marquee velocity={20} direction="ltr">
+      <Marquee velocity={relativeVelocity} direction="ltr">
         {quotes.slice(quotes.length / 2).map((quote, index) => {
           return (
             <p className="mx-6" key={`quote-${index}`}>
