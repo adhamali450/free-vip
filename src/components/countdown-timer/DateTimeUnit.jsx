@@ -19,7 +19,7 @@ const DateTimeUnit = ({ value, type, seperate }) => {
           return (
             <p
               key={i}
-              className="font-extrabold text-3xl sm:text-4xl xl:text-5xl mr-1 py-1 sm:py-2 px-2 sm:px-3 border rounded-md text-main-yellow"
+              className="font-extrabold text-3xl sm:text-4xl xl:text-5xl mr-1 py-1 sm:py-2 px-2 sm:px-3 border-[2px] rounded-md text-main-yellow"
             >
               {arNum(val)}
             </p>
