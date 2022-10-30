@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 
 import Hero from "@sections/Hero";
 import Footer from "@sections/Footer";
+import copy from "copy-to-clipboard";
 
 import "./App.sass";
 
@@ -42,7 +43,11 @@ function App() {
 
   const checkmarkRef = useRef(null);
   const copyHandler = () => {
-    navigator.clipboard.writeText("https://three-horsemen-of-21.vercel.app/");
+    copy("https://three-horsemen-of-21.vercel.app/", {
+      debug: true,
+      message: "Press #{key} to copy",
+    });
+    // navigator.clipboard.writeText("https://three-horsemen-of-21.vercel.app/");
     checkmarkRef.current.classList.add("checkmark");
     setTimeout(() => {
       checkmarkRef.current.classList.remove("checkmark");
@@ -103,7 +108,7 @@ function App() {
                     دوس هنا عشان تعمله copy
                   </button>
                   <img
-                    className="invisible"
+                    className="invisible w-5 h-5"
                     ref={checkmarkRef}
                     src={iconCheckmark}
                     alt="success"

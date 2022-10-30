@@ -111,7 +111,7 @@ const LyricsMarquee = ({ className }) => {
 const Footer = () => {
   return (
     <footer
-      className="wrapper bg-no-repeat bg-cover mt-9 py-16"
+      className="wrapper bg-no-repeat bg-cover mt-9 pt-16 pb-11"
       style={{
         backgroundImage: `linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 100%), url(${collection})`,
       }}
@@ -120,7 +120,7 @@ const Footer = () => {
         <Contact />
       </div>
       <div className="fl-h2 text-main-yellow font-extrabold">
-        <LyricsMarquee className="mt-10" />
+        <LyricsMarquee className="mt-12" />
       </div>
     </footer>
   );
