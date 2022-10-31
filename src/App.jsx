@@ -47,7 +47,6 @@ function App() {
       debug: true,
       message: "Press #{key} to copy",
     });
-    // navigator.clipboard.writeText("https://three-horsemen-of-21.vercel.app/");
     checkmarkRef.current.classList.add("checkmark");
     setTimeout(() => {
       checkmarkRef.current.classList.remove("checkmark");
@@ -105,7 +104,7 @@ function App() {
                     className="font-semibold text-dark-yellow hover:underline"
                     onClick={copyHandler}
                   >
-                    دوس هنا عشان تعمله copy
+                    دوس عشان تعمله copy
                   </button>
                   <img
                     className="invisible w-5 h-5"

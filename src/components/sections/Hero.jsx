@@ -97,7 +97,7 @@ const Hero = () => {
             (ويجز - {heroQuotes[renderedQuoteIndex]["song"]})
           </small>
         </h1>
-        <CountdownTimer targetDate={new Date("2022-11-04")} />
+        <CountdownTimer targetDate={new Date("2022-11-04T14:00:00.00Z")} />
       </div>
     </header>
   );
