@@ -3,7 +3,7 @@ import CountdownTimer from "@components/countdown-timer/CountdownTimer";
 
 import wegz_hero from "@assets/wegz-hero.webp";
 
-const Hero = () => {
+const Hero = ({ deadline }) => {
   const heroHeaderRef = useRef(null);
   const [renderedQuoteIndex, setRenderedQuoteIndex] = useState(0);
   const heroQuotes = [
@@ -97,7 +97,7 @@ const Hero = () => {
             (ويجز - {heroQuotes[renderedQuoteIndex]["song"]})
           </small>
         </h1>
-        <CountdownTimer targetDate={new Date("2022-11-04T14:00:00.00Z")} />
+        <CountdownTimer targetDate={deadline} />
       </div>
     </header>
   );
