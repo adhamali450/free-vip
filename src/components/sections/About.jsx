@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
 import copy from "copy-to-clipboard";
 
-import th_zux from "@assets/th-zux.webp";
-import th_sefo from "@assets/th-se'fo.webp";
-import th_rengo from "@assets/th-rengo.webp";
+import th_zux from "@assets/th-zux.jpg";
+import th_sefo from "@assets/th-se'fo.jpg";
+import th_rengo from "@assets/th-rengo.jpg";
 
 import iconCheckmark from "@assets/icon-checkmark.svg";
 import imgExen from "@assets/exen.png";
@@ -42,7 +42,7 @@ const About = () => {
 
   const checkmarkRef = useRef(null);
   const copyHandler = () => {
-    copy("https://three-horsemen-of-21.vercel.app/", {
+    copy("https://three-horsemen-of-abyusif.vercel.app/", {
       debug: true,
       message: "Press #{key} to copy",
     });
