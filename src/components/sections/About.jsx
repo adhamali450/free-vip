@@ -67,7 +67,7 @@ const About = () => {
               key={horseman.name}
             >
               <img
-                className="relative w-full h-full object-cover"
+                className="relative aspect-square object-cover"
                 src={horseman.image}
                 alt={horseman.name}
               />
