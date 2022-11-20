@@ -5,9 +5,9 @@ module.exports = {
     extend: {
       colors: {
         "translucent-black": "rgba(0, 0, 0, 0.6)",
-        "light-yellow": "#f0e4a6",
-        "main-yellow": "#EED970",
-        "dark-yellow": "#D4B100",
+        "primary-light": "#f7a3b7",
+        primary: "#f26b8b",
+        "primary-dark": "#f26b8b",
       },
     },
   },

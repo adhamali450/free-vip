@@ -1,59 +1,47 @@
 import React, { useEffect, useState, useRef, Fragment } from "react";
 import CountdownTimer from "@components/countdown-timer/CountdownTimer";
 
-import wegz_hero from "@assets/wegz-hero.webp";
+import hero from "@assets/abyusif-hero.webp";
 
 const Hero = ({ deadline }) => {
   const heroHeaderRef = useRef(null);
   const [renderedQuoteIndex, setRenderedQuoteIndex] = useState(0);
   const heroQuotes = [
     {
-      quote: `هنغنيلك و هنرقصلك
+      quote: `بتعارك فالزمالك
       *
-      هات جنيه`,
-      song: "البار",
+      ماسك مسدس ماية`,
+      song: "يح",
     },
     {
-      quote: `هنوصل بالسلامة
+      quote: `ملك الكتابة
       *
-      و انتو بالسلامة`,
-      song: "بالسلامة",
+      و بختار الأتنين`,
+      song: "جمل",
     },
     {
-      quote: `الصحاب غرقانة
+      quote: `الماسك مش مبين
       *
-      انا فالغريق`,
-      song: "21",
+      أد ايه الغرض سئ`,
+      song: "أسياد الشوط",
     },
     {
-      quote: `زميلي عدي اليوم
+      quote: `أسياد الشوط 
       *
-      عدي...`,
-      song: "ATM",
+      اكتب و قيد`,
+      song: "أسياد الشوط",
     },
     {
-      quote: `مبقي زميلي عن
+      quote: `هلاوس الفشل في دماغي
       *
-      راسي`,
-      song: "سكرتي",
+      فنانة بتبدع بالليل`,
+      song: "عزرائيل",
     },
     {
-      quote: `راجل عمري ما جليت
+      quote: `ممكن تكون العين عليك
       *
-      زميل`,
-      song: "ساليني",
-    },
-    {
-      quote: `جيلي عارف
-      *
-      فين الصح`,
-      song: "منحوس",
-    },
-    {
-      quote: `وشك دواسة
-      *
-      ادوس تكركر`,
-      song: "دورك جاي",
+      بس انا الرمش`,
+      song: "ميجاترون",
     },
   ];
 
@@ -78,11 +66,11 @@ const Hero = ({ deadline }) => {
       className="wrapper bg-no-repeat bg-cover bg-center py-14"
       style={{
         backgroundColor: "#000",
-        backgroundImage: `linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%), url(${wegz_hero})`,
+        backgroundImage: `linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%), url(${hero})`,
       }}
     >
       <div className="container">
-        <h1 className="fl-h1 font-extrabold text-white" ref={heroHeaderRef}>
+        <h1 className="fl-h1 font-extrabold" ref={heroHeaderRef}>
           {heroQuotes[renderedQuoteIndex]["quote"]
             .split("*")
             .map((substr, index) => {
@@ -94,7 +82,7 @@ const Hero = ({ deadline }) => {
             })}
           <small className="text-lg font-normal opacity-70">
             <br className="inline-block md:hidden" />
-            (ويجز - {heroQuotes[renderedQuoteIndex]["song"]})
+            (أبيوسف - {heroQuotes[renderedQuoteIndex]["song"]})
           </small>
         </h1>
         <CountdownTimer targetDate={deadline} />

@@ -33,15 +33,15 @@
         @apply w-full max-w-[1920px] mx-auto
 
     .question-header
-        @apply fl-b mb-2 font-bold text-dark-yellow flex items-center gap-2
+        @apply fl-b mb-2 font-bold text-primary-dark flex items-center gap-2
         &::after
             content: '؟'
-            @apply grid place-content-center rounded-full bg-light-yellow w-5 h-5 text-base text-dark-yellow text-sm
+            @apply grid place-content-center rounded-full bg-primary-light w-5 h-5 text-base text-primary-dark text-sm
     .shifted-border
         position: relative
         &::before
             content: ''
-            @apply border-[3px] md:border-[4px] border-solid border-dark-yellow
+            @apply border-[3px] md:border-[4px] border-solid border-primary-dark
             @apply absolute block w-full h-full -z-10
             @apply left-1 md:left-2 top-1 md:top-2
     .our-images
@@ -70,4 +70,4 @@ body
     min-height: 100vh
 
 h2
-    @apply font-bold text-dark-yellow
+    @apply font-bold text-primary-dark
