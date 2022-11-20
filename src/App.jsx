@@ -10,7 +10,7 @@ function App() {
   const deadline = new Date("2022-11-24T14:00:00.00Z");
   const countdown = deadline - Date.now();
   return (
-    <div className="App dark:bg-[#0f0f0f] dark:text-[#CEEAF7]">
+    <div className="App bg-[#0f0f0f] text-[#CEEAF7]">
       {countdown <= 0 && <Header />}
 
       <Hero deadline={deadline} />
