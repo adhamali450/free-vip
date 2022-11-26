@@ -8,6 +8,8 @@ module.exports = {
         "primary-light": "#f7a3b7",
         primary: "#f26b8b",
         "primary-dark": "#f26b8b",
+        "color-failure": "#ca0201",
+        "color-success": "#198754",
       },
     },
   },

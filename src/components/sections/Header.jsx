@@ -5,12 +5,12 @@ const Header = () => {
   const headerRef = useRef(null);
   return (
     <header
-      className="bg-[#ca0201] text-white flex justify-between items-center px-4 py-2 gap-2"
+      className="bg-color-success text-white flex justify-between items-center px-4 py-2 gap-2"
       ref={headerRef}
     >
       <span className="fl-small">
-        معرفناش نوصل. كنا حابين نحلها سلمي من غير ما نبوظ فرحة الناس. تخريب
-        الحفلة كان قرار صعب و لكن اضطراري
+        احنا وصلنا يا رجالة و احلي مسا علي ابيو و عمر جودت و كل راجل جدع ساهم
+        اننا نوصل
       </span>
       <button
         className="shrink-0"
